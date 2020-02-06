@@ -5,8 +5,8 @@ const bodyparse = require('./bootstrap.bodyParse');
 
 module.exports = app => {
     app.set('etag', false);
-    app.set('views', 'views');
-    app.set('view engine', 'pug');
+    // app.set('views', 'views');
+    // app.set('view engine', 'pug');
     security(app)
     compression(app)
     bodyparse(app)
