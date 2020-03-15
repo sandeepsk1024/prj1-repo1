@@ -1,4 +1,4 @@
-const { typeDefs, resolvers } = require('../graphql/schema')
+const { typeDefs, resolvers } = require('../graphql')
 const { ApolloServer } = require('apollo-server-express');
 
 module.exports = app => {
