@@ -2,6 +2,7 @@ const compression = require('./bootstrap.compression');
 const routes = require('./bootstrap.routes');
 const security = require('./bootstrap.security');
 const bodyparse = require('./bootstrap.bodyParse');
+const graphql = require('./bootstrap.graphql');
 
 module.exports = app => {
     app.set('etag', false);
@@ -10,6 +11,7 @@ module.exports = app => {
     security(app)
     compression(app)
     bodyparse(app)
+    graphql(app)
     routes(app)
 }
 
