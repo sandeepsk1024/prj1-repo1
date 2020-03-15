@@ -1,0 +1,23 @@
+version: "2.4"
+services: 
+    server:
+        build:
+            context: ./server/
+        networks: 
+            - backend
+        container_name: server
+        image: prj1/server
+        ports: 
+            - "5000:8080"
+
+    db-main:
+        build:
+            context: ./db-main
+        networks: 
+            - backend
+        container_name: db-main
+        image: prj1/db-main
+networks: 
+    backend:
+        driver: bridge
+
