@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[2],{RXBc:function(n,e,t){"use strict";t.r(e);var a=t("q1tI"),r=t.n(a);e.default=function(n){return r.a.createElement("h1",null,"Namskar World!")}}}]);
+//# sourceMappingURL=component---src-pages-index-js-56ab13bb15ec14dca9d2.js.map

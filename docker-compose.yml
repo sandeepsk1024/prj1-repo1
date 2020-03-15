@@ -1,10 +1,20 @@
 version: "2.4"
 services: 
+    ui-web:
+        build:
+            context: ./ui-web/
+        networks: 
+            - frontend
+        container_name: ui-web
+        image: prj1/ui-web
+        ports: 
+            - "5001:8080"
     server:
         build:
             context: ./server/
         networks: 
             - backend
+            - frontend
         container_name: server
         image: prj1/server
         ports: 
@@ -17,7 +27,11 @@ services:
             - backend
         container_name: db-main
         image: prj1/db-main
+        ports: 
+            - "5002:27017"
 networks: 
+    frontend:
+        driver: bridge
     backend:
         driver: bridge
 

@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./src/pages/index.js"],"names":["props"],"mappings":"2FAAA,gCAEe,mBAAAA,GAAK,OAAI","file":"component---src-pages-index-js-56ab13bb15ec14dca9d2.js","sourcesContent":["import React from 'react';\r\n\r\nexport default props => <h1>Namskar World!</h1>"],"sourceRoot":""}
