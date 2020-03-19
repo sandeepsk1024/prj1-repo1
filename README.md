@@ -13,3 +13,5 @@ sudo docker container run -d -p 5001:27017 prj1/main-db
 
 sudo docker image build -t prj1/session-db .
 sudo docker container run -d -p 5002:27017 prj1/session-db
+
+sudo docker-compose up --build

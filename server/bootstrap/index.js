@@ -3,11 +3,10 @@ const routes = require('./bootstrap.routes');
 const security = require('./bootstrap.security');
 const bodyparse = require('./bootstrap.bodyParse');
 const graphql = require('./bootstrap.graphql');
+const etag = require('./bootstrap.etag')
 
 module.exports = app => {
-    app.set('etag', false);
-    // app.set('views', 'views');
-    // app.set('view engine', 'pug');
+    etag(app);
     security(app)
     compression(app)
     bodyparse(app)
