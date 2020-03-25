@@ -1,17 +1,11 @@
 const { gql } = require('apollo-server')
-
-const getTodo = (title) => ({
-    title
-})
+const DB = require('../utils/data')
 
 const resolvers = {
     Query: {
-        todos: () => [
-            getTodo("eat"),
-            getTodo("fast"),
-            getTodo("sleep"),
-            getTodo("work")
-        ]
+        todos: () => {
+            return DB.Todos.getAll()
+        }
     }
 }
 
