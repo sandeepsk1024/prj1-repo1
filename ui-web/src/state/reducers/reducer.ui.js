@@ -1,4 +1,6 @@
-import ACTIONTYPES from '../actions/action.types'
+import actions from "../actions";
+const { ActionTypes } = actions;
+
 const initialState = {
     wip: false,
     modal: null,
@@ -7,12 +9,12 @@ const initialState = {
 
 export default (state = initialState, action) => {
     switch (action.type) {
-        case ACTIONTYPES.UI.SET_WIP:
+        case ActionTypes.UI.SET_WIP:
             return {
                 ...state,
                 wip: true
             }
-        case ACTIONTYPES.UI.UNSET_WIP:
+        case ActionTypes.UI.UNSET_WIP:
             return {
                 ...state,
                 wip: false

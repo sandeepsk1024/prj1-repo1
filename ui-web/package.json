@@ -7,7 +7,7 @@
     "build": "gatsby build",
     "dev": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
-    "start": "npm run develop",
+    "start": "gatsby develop",
     "serve": "gatsby serve -p 8080 --host 0.0.0.0",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
@@ -15,13 +15,16 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "formik": "^2.1.4",
     "gatsby": "^2.20.12",
     "gatsby-plugin-postcss": "^2.2.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
+    "react-modal": "^3.11.2",
     "react-redux": "^7.2.0",
     "redux": "^4.0.5",
     "redux-thunk": "^2.3.0",
+    "styled-components": "^5.1.0",
     "whatwg-fetch": "^3.0.0"
   },
   "devDependencies": {
